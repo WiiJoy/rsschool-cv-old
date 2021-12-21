@@ -36,9 +36,9 @@
 ## Образование:
 1. Высшее - инженер, системы автоматического регулирования движения поездов (РУТ МИИТ, 2016г)
 1. Курсы:
-* [Основы HTML и CSS с нуля](https://www.udemy.com/course/html-css-from-zero/)
-* [Полный курс по JavaScript + React - с нуля до результата](https://www.udemy.com/course/javascript_full/)
-* [Современный JavaScript + Vue с нуля на реальных проектах](https://www.udemy.com/course/modern-javascript-from-beginning/)
+    * [Основы HTML и CSS с нуля](https://www.udemy.com/course/html-css-from-zero/)
+    * [Полный курс по JavaScript + React - с нуля до результата](https://www.udemy.com/course/javascript_full/)
+    * [Современный JavaScript + Vue с нуля на реальных проектах](https://www.udemy.com/course/modern-javascript-from-beginning/)
 1. [Учебник JS](https://learn.javascript.ru/)
 1. Официальная документация, гугл :)
 
