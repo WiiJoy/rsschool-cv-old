@@ -1,48 +1,65 @@
-# Виталий Рогозин
+# Vitaly Rogozin
 
-## Контакты:
+## Contacts:
 * e-mail: **wiification@gmail.com**
 * telegram: **@WiiJoy**
+* discord: **Vitaly Rogozin (@wiijoy)**
+* github: **https://github.com/WiiJoy**
 
-## О себе:
-* полных 28 лет, инженер систем СЦБ по образованию
-* начал погружаться в html, css, JS и Vue с января 2021-го
-* в сентябре 2021-го подхватил приложение на Vue2, занимаюсь его поддержкой и развитием
-* скилам еще расти и расти
-* считаю, что практика - лучший способ как закрепления материала, так и узнать что-то новое
+## About me:
+* 28 years
+* I started to study html, css, JavaScript & Vue.js in January 2021
+* I have been supporting and developing a web app since September 2021 (Vue v.2)
+* I think practice is the best way to learn programming
+* I'm looking for new experience and approaches to solving different tasks
 
-## Навыки:
-* html
-* CSS, SCSS
-* Адаптивная верстка
-* Семантическая верстка
-* БЭМ
-* JavaScript (в тч ES6)
-* Vue.js (v.2)
-* Vuex
-* Vue Router
+## Skills:
+* **HTML** (HTML5, Adaptive Layout, Semantic Layout)
+* **CSS** (preprocessor SASS/SCSS)
+* **JavaScript** (Basic, OOP, Asynchronous JavaScript, DOM, ES6)
+* **Vue.js** (v.2, Vuex, Vue Router)
+* **Git**
+* **Other** (Figma, Photoshop, Movavi VideoEditor, etc.)
 
-## Примеры кода:
-1. [Movies: самый первый учебный проект по js](https://github.com/WiiJoy/prMovies), Udemy, преподаватель: Иван Петриченко
-1. [FOOD: крупный проект по js](https://github.com/WiiJoy/FOOD), Udemy, преподаватель: Иван Петриченко
-1. [Portfolio: завершающий проект по верстке](https://github.com/WiiJoy/portfolio), Udemy, преподаватель: Иван Петриченко
-1. [TODO: стандартный учебный проект на bootstrap и js](https://github.com/WiiJoy/todo-project), Udemy, преподаватель: Денис Мещеряков
-1. [BudgetApp: первая проба Vue](https://github.com/WiiJoy/budget-app), Udemy, преподаватель: Денис Мещеряков
-1. [MoviesApp: учебный проект по Vue и Vuex](https://github.com/WiiJoy/moviesapp)
+## Code examples
+### Education:
+1. [Movies: first education project on js](https://github.com/WiiJoy/prMovies), Udemy, Instructor: Иван Петриченко
+1. [FOOD: project for js](https://github.com/WiiJoy/FOOD), Udemy, Instructor: Иван Петриченко
+1. [Portfolio: last layout project](https://github.com/WiiJoy/portfolio), Udemy, Instructor: Иван Петриченко
+1. [TODO: standart education project](https://github.com/WiiJoy/todo-project), Udemy, Instructor: Денис Мещеряков
+1. [BudgetApp: first Vue experience](https://github.com/WiiJoy/budget-app), Udemy, Instructor: Денис Мещеряков
+1. [MoviesApp: education project on Vue and Vuex](https://github.com/WiiJoy/moviesapp)
 
-## Опыт работы:
-4 месяца - поддержка и развитие web-приложения работы с текстовыми документами
+### Project:
+_**Description:** Given some text with html tags, return this text with replacement unmark list's items for items with 'li'_
+```
+function modifyLi(text) {
+    const regP = /\/(p|li)><p>(-|·)\s\D.+[,.;:]<\/p>/s
 
-## Образование:
-1. Высшее - инженер, системы автоматического регулирования движения поездов (РУТ МИИТ, 2016г)
-1. Курсы:
-    * [Основы HTML и CSS с нуля](https://www.udemy.com/course/html-css-from-zero/)
-    * [Полный курс по JavaScript + React - с нуля до результата](https://www.udemy.com/course/javascript_full/)
-    * [Современный JavaScript + Vue с нуля на реальных проектах](https://www.udemy.com/course/modern-javascript-from-beginning/)
-1. [Учебник JS](https://learn.javascript.ru/)
-1. Официальная документация, гугл :)
+    while (regP.test(text)) {
+        let foundP =  text.match(regP)
 
-## Уровень английского:
-Среднее между А1 и А2 (время берет свое), основное познание по:
-* старым играм с Dendi и Sega
-* переводам гайдов с забугорных площадок (например, к TESO во время ее разработки и тестирования)
+        let handledP = foundP[0].replaceAll('</p>', '</li>').replaceAll('<p>- ', '<li>').replaceAll('<p>· ', '<li>')
+        text = text.replaceAll(foundP[0], handledP)
+    }
+
+    return text
+}
+```
+
+## Experience:
+4 months: supporting and developing a massive web app for handling html text document.
+
+## Education
+Russian University of Transport (MIIT), "Automation and telemechanics in railway transport", 2011 - 2016
+
+## Courses:
+1. [Основы HTML и CSS с нуля](https://www.udemy.com/course/html-css-from-zero/)
+1. [Полный курс по JavaScript + React - с нуля до результата](https://www.udemy.com/course/javascript_full/)
+1. [Современный JavaScript + Vue с нуля на реальных проектах](https://www.udemy.com/course/modern-javascript-from-beginning/)
+1. [Learn JavaScript](https://learn.javascript.ru/)
+1. Documentation, Google :)
+
+## Languages:
+1. Russian - Native
+1. English - Elementary/Pre-Intermediate
