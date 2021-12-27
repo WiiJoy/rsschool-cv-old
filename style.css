@@ -17,10 +17,24 @@ body {
 header {
     position: relative;
 }
+main {
+    height: calc(100vh - 100px);
+}
 
 nav {
     height: 50px;
     background-color: #2a303e;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+}
+h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
 }
 
 .container {
@@ -56,8 +70,43 @@ nav {
     color: #5AC4FF;
 }
 
+.sections__wrapper {
+    display: flex;
+    height: calc(100% - 300px);
+}
+.sections__left {
+    width: 300px;
+    height: 100%;
+    background-color: #199EDA;
+}
+
+.profile {
+    height: 300px;
+    background-color: #199EDA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile__photo__img {
+    display: block;
+    width: 300px;
+}
+.profile__descr {
+    margin: 0 auto;
+}
+.title, .subtitle {
+    text-align: center;
+    color: #ffffff;
+}
+/* .subtitle {
+    text-align: center;
+} */
+
+
 .footer {
     height: 50px;
+    
 }
 .footer__wrapper {
     height: 100%;
