@@ -82,7 +82,6 @@ h2 {
 
 .profile {
     height: 300px;
-    background-color: #199EDA;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -97,12 +96,8 @@ h2 {
 }
 .title, .subtitle {
     text-align: center;
-    color: #ffffff;
+    color: #2a303e;
 }
-/* .subtitle {
-    text-align: center;
-} */
-
 
 .footer {
     height: 50px;
