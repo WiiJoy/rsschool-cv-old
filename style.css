@@ -13,11 +13,13 @@ header {
 
 nav {
     height: 50px;
+    background-color: #2a303e;
 }
 
 .container {
     width: 1140px;
     margin: 0 auto;
+    height: 100%;
 }
 
 .menu {
@@ -25,5 +27,32 @@ nav {
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
+    height: 100%;
+    padding: 0 38px;
+}
+.menu__item {
+    border-right: 2px dotted white;
+    padding-right: 38px;
+}
+.menu__item:last-child {
+    border-right: none;
+    padding: 0;
+}
+.menu__item__link {
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all .5s;
+}
+.menu__item__link:hover {
+    color: #5AC4FF;
+}
+
+.about {
+    height: 300px;
+}
+.about__wrapper {
+    background-color: #199eda;
     height: 100%;
 }
