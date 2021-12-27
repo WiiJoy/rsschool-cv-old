@@ -93,6 +93,18 @@ h3 {
 }
 .header__left__title {
     padding-left: 30px;
+    position: relative;
+    z-index: 1;
+}
+.header__left__title::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 18px;
+    top: 8px;
+    width: 10px;
+    height: 5px;
+    background-color: #ffffff;
 }
 
 .contacts__body, .courses__body, .languages__body {
