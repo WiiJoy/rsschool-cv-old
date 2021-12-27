@@ -36,6 +36,12 @@ h2 {
     font-size: 24px;
     line-height: 36px;
 }
+h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #ffffff;
+}
 
 .container {
     width: 1140px;
@@ -78,6 +84,35 @@ h2 {
     width: 300px;
     height: 100%;
     background-color: #199EDA;
+}
+
+.header_left {
+    height: 30px;
+    width: 100%;
+    background-color: #2a303e;
+}
+.header__left__title {
+    padding-left: 30px;
+}
+
+.contacts__body, .courses__body, .languages__body {
+    padding: 5px 0;
+}
+.contacts__list, .courses__list, .languages__list {
+    padding-left: 30px;
+}
+.contacts__item, .courses__item, .languages__item {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 5px 0;
+    color: #ffffff;
+}
+
+.education__body {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
 }
 
 .profile {
