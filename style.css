@@ -49,6 +49,13 @@ h3 {
     height: 100%;
 }
 
+.divider {
+    width: 150px;
+    height: 1px;
+    background-color: #C9CAD1;
+    margin: 5px auto;
+}
+
 .menu {
     display: flex;
     justify-content: space-between;
@@ -107,6 +114,16 @@ h3 {
     height: 5px;
     background-color: #ffffff;
 }
+.header__right__title::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 18px;
+    top: 13px;
+    width: 10px;
+    height: 5px;
+    background-color: #2a303e;
+}
 
 .contacts__body, .courses__body, .languages__body {
     padding: 5px 0;
@@ -160,6 +177,26 @@ h3 {
 }
 .sections__right__body {
     color: #2a303e;
+}
+
+.about__body {
+    text-indent: 20px;
+}
+
+.skills__body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills__item {
+    flex: 200px;
+    border: 1px solid #C9CAD1;
+    margin: 5px;
+    padding: 10px;
+}
+.skills__item__header {
+    text-align: center;
+    font-weight: 700;
 }
 
 .footer {
