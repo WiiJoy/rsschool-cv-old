@@ -11,6 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100%;
     min-height: 100vh;
 }
 
@@ -18,7 +19,8 @@ header {
     position: relative;
 }
 main {
-    height: calc(100vh - 100px);
+    flex: 1;
+    /* height: calc(100% - 100px); */
 }
 
 nav {
@@ -55,6 +57,22 @@ h3 {
     background-color: #C9CAD1;
     margin: 5px auto;
 }
+.divider_exp {
+    margin-top: 15px;
+    width: 98%;
+    height: 2px;
+    position: relative;
+}
+.divider_exp::before {
+    content: '';
+    position: absolute;
+    border: solid #C9CAD1;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    transform: rotate(-45deg);
+    right: -1px;
+    top: -3px;
+}
 
 .menu {
     display: flex;
@@ -84,8 +102,9 @@ h3 {
 }
 
 .sections__wrapper {
+    flex: 1;
     display: flex;
-    height: calc(100% - 300px);
+    /* height: calc(100% - 300px); */
 }
 .sections__left {
     width: 300px;
@@ -183,12 +202,12 @@ h3 {
     text-indent: 20px;
 }
 
-.skills__body {
+.skills__body, .experience__body {
     display: flex;
     flex-wrap: wrap;
 }
 
-.skills__item {
+.skills__item, .experience__item {
     flex: 200px;
     border: 1px solid #C9CAD1;
     margin: 5px;
@@ -197,6 +216,28 @@ h3 {
 .skills__item__header {
     text-align: center;
     font-weight: 700;
+}
+
+.experience__item {
+    border: none;
+    position: relative;
+    z-index: 1;
+    border-left: 2px solid #C9CAD1
+}
+.experience__item::before {
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 2px;
+    background-color: #C9CAD1;
+    top: -20px;
+    left: -2px;
+    z-index: -1;
+}
+.experience__item__date {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #C9CAD1;
 }
 
 .footer {
