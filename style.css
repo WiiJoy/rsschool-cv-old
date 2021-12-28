@@ -91,10 +91,11 @@ h3 {
     width: 100%;
     background-color: #2a303e;
 }
-.header__left__title {
+.header__left__title, .header__right__title {
     padding-left: 30px;
     position: relative;
     z-index: 1;
+    font-weight: 300;
 }
 .header__left__title::before {
     content: '';
@@ -120,7 +121,7 @@ h3 {
     color: #ffffff;
 }
 
-.education__body {
+.education__body, .sections__right__body {
     padding: 10px;
     font-size: 14px;
     font-weight: 300;
@@ -143,6 +144,21 @@ h3 {
 }
 .title, .subtitle {
     text-align: center;
+    color: #2a303e;
+}
+
+.sections__right {
+    flex: 1;
+}
+.header__right {
+    height: 40px;
+    width: 100%;
+    background-color: #199EDA;
+}
+.header__right__title {
+    line-height: 40px;
+}
+.sections__right__body {
     color: #2a303e;
 }
 
