@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 * {
-    /* box-sizing: border-box; */
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -20,7 +19,6 @@ header {
 }
 main {
     flex: 1;
-    /* height: calc(100% - 100px); */
 }
 
 nav {
@@ -104,11 +102,9 @@ h3 {
 .sections__wrapper {
     flex: 1;
     display: flex;
-    /* height: calc(100% - 300px); */
 }
 .sections__left {
     width: 300px;
-    height: 100%;
     background-color: #199EDA;
 }
 
@@ -145,7 +141,7 @@ h3 {
 }
 
 .contacts__body, .courses__body, .languages__body {
-    padding: 5px 0;
+    padding: 15px 0;
 }
 .contacts__list, .courses__list, .languages__list {
     padding-left: 30px;
@@ -158,7 +154,7 @@ h3 {
 }
 
 .education__body, .sections__right__body {
-    padding: 10px;
+    padding: 15px;
     font-size: 14px;
     font-weight: 300;
     color: #ffffff;
@@ -230,7 +226,7 @@ h3 {
     height: 30px;
     width: 2px;
     background-color: #C9CAD1;
-    top: -20px;
+    top: -25px;
     left: -2px;
     z-index: -1;
 }
