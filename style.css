@@ -319,6 +319,22 @@ h3 {
     
 }
 .footer__wrapper {
+    box-sizing: border-box;
     height: 100%;
+    padding: 10px;
     background-color: #2a303e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    font-size: 14px;
+}
+.footer__github {
+    text-decoration: none;
+    color: #ffffff;
+}
+.footer__rsschool__icon {
+    display: block;
+    height: 30px;
+    filter: invert(100%);
 }
