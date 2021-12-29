@@ -134,14 +134,14 @@ h3 {
     position: absolute;
     z-index: -1;
     left: 18px;
-    top: 13px;
+    top: 14px;
     width: 10px;
     height: 5px;
     background-color: #2a303e;
 }
 
 .contacts__body, .courses__body, .languages__body {
-    padding: 15px 0;
+    padding: 15px 10px;
 }
 .contacts__list, .courses__list, .languages__list {
     padding-left: 30px;
@@ -188,7 +188,7 @@ h3 {
     background-color: #199EDA;
 }
 .header__right__title {
-    line-height: 40px;
+    line-height: 42px;
 }
 .sections__right__body {
     color: #2a303e;
