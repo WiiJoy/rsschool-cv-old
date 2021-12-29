@@ -152,6 +152,23 @@ h3 {
     margin: 5px 0;
     color: #ffffff;
 }
+.contacts__list {
+    list-style-type: none;
+    margin-left: -20px;
+}
+.contacts__item {
+    display: flex;
+    align-items: center;
+}
+.contacts__item__icon {
+    width: 30px;
+    color: #ffffff;
+    margin-right: 10px;
+}
+.contacts__item__link {
+    color: #ffffff;
+    text-decoration: none;
+}
 
 .education__body, .sections__right__body {
     padding: 15px;
@@ -198,12 +215,12 @@ h3 {
     text-indent: 20px;
 }
 
-.skills__body, .experience__body {
+.skills__body, .experience__body, .examplies__edu {
     display: flex;
     flex-wrap: wrap;
 }
 
-.skills__item, .experience__item {
+.skills__item, .experience__item, .examplies__item {
     flex: 200px;
     border: 1px solid #C9CAD1;
     margin: 5px;
@@ -234,6 +251,32 @@ h3 {
     margin-top: 10px;
     font-size: 12px;
     color: #C9CAD1;
+}
+
+
+.examplies__item {
+    border: none;
+}
+.examplies__item__link {
+    text-decoration: none;
+    color: #2a303e;
+    transition: .3s;
+}
+.examplies__item__link:hover {
+    color: #199EDA;
+}
+.examplies__item__img {
+    display: block;
+    margin: 5px auto;
+    width: 200px;
+    transition: .3s;
+}
+.examplies__item__link:hover .examplies__item__img {
+    transform: scale(1.1);
+}
+
+.examplies__item__descr {
+    text-align: center;
 }
 
 .descr_bold {
