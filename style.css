@@ -59,18 +59,35 @@ body {
     display: flex;
 }
 
+.main__left {
+    background-color: #7F242D;
+    width: 350px;
+}
+
+.main__right {
+    flex: 1;
+}
+
+.title__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
+
 
 
 .title {
     box-sizing: border-box;
     margin: 0 auto;
     text-align: center;
-    border: 3px solid black;
+    border: 3px solid white;
     border-radius: 20px;
     position: relative;
     font-size: 48px;
     line-height: 120px;
     width: 500px;
+    color: white;
 }
 
 .title::before {
@@ -84,13 +101,13 @@ body {
     text-align: center;
     width: 300px;
     margin: 0 auto;
-    background-color: white;
+    background-color: #070719;
+    color: #7F242D 
 }
 
 .photo {
-    width: 400px;
-    height: 400px;
-    /* background-color: #7F242D; */
+    width: 350px;
+    height: 350px;
 }
 
 
