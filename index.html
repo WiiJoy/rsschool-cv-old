@@ -253,7 +253,10 @@
                                             <span class="code_func">while</span> (regP.<span class="code_funk-name">test</span>(text)) {
                                                 <span class="code_func">let</span> foundP =  text.<span class="code_funk-name">match</span>(regP)
                                         
-                                                <span class="code_func">let</span> handledP = foundP[<span class="code_var">0</span>].<span class="code_funk-name">replaceAll</span>(<span class="code_text">'&lt;/p&gt;', '&lt;/li&gt;'</span>).<span class="code_funk-name">replaceAll</span>(<span class="code_text">'&lt;p&gt;- ', '&lt;li&gt;'</span>).<span class="code_funk-name">replaceAll</span>(<span class="code_text">'&lt;p&gt;· ', '&lt;li&gt;'</span>)
+                                                <span class="code_func">let</span> handledP = foundP[<span class="code_var">0</span>]
+                                                    .<span class="code_funk-name">replaceAll</span>(<span class="code_text">'&lt;/p&gt;', '&lt;/li&gt;'</span>)
+                                                    .<span class="code_funk-name">replaceAll</span>(<span class="code_text">'&lt;p&gt;- ', '&lt;li&gt;'</span>)
+                                                    .<span class="code_funk-name">replaceAll</span>(<span class="code_text">'&lt;p&gt;· ', '&lt;li&gt;'</span>)
                                                 text = text.<span class="code_funk-name">replaceAll</span>(foundP[<span class="code_var">0</span>], handledP)
                                             }
                                             
@@ -269,7 +272,10 @@
 
         </main>
 
-        <footer class="footer">Footer</footer>
+        <footer class="footer">
+            <div class="footer__github"><a href="https://github.com/WiiJoy" class="footer__link">WiiJoy</a> &copy; 2022</div>
+            <div class="footer__rss"><a href="https://rs.school/js-stage0/" class="footer__link">Rolling Scopes School</a></div>
+        </footer>
     </div>
 </body>
 </html>
