@@ -137,4 +137,27 @@ body {
     height: 350px;
 }
 
+.left__title, .right__title {
+    box-sizing: border-box;
+    padding: 0 20px;
+    background-color: #070719;
+}
+
+.right__title {
+    background-color: #7F242D;
+}
+
+.subtitle {
+    display: inline;
+    background-color: #7F242D;
+    color: white;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.subtitle_right {
+    background-color: #070719;
+}
+
 
