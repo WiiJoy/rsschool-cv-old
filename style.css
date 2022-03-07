@@ -188,6 +188,14 @@ body {
 
 .languages__item {
     list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.languages__item__img {
+    width: 40px;
+    border-radius: 3px;
 }
 
 .contacts__body {
