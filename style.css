@@ -364,10 +364,10 @@ body {
 }
 
 .examplies__edu {
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 280px);
-    grid-auto-rows: repeat(2, 180px);
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
 }
 
 .examplies__item {
@@ -386,13 +386,15 @@ body {
 
 .examplies__item__img {
     display: block;
-    margin: 5px auto;
-    width: 200px;
-    transition: .3s;
+    width: 100%;
+    /* border: 1px solid #7F242D; */
+    filter: grayscale(1) brightness(0.5);
+    transition: all .3s;
 }
 
 .examplies__item__link:hover .examplies__item__img {
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
+    filter: none;
 }
 
 .examplies__item__descr {
