@@ -366,7 +366,7 @@ body {
 .examplies__edu {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 5px;
 }
 
@@ -381,7 +381,7 @@ body {
 
 .examplies__item_memory-game {
     grid-row: 3 / 5;
-    grid-column: 3 / 5;
+    grid-column: 2 / 4;
 }
 
 .examplies__item__link {
@@ -390,8 +390,12 @@ body {
     transition: .3s;
 }
 
-.examplies__item__link:hover {
+/* .examplies__item__link:hover {
     color: #7F242D;
+} */
+
+.examplies__item__wrap {
+    position: relative;
 }
 
 .examplies__item__img {
@@ -410,6 +414,12 @@ body {
 }
 
 .examplies__item__descr {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    width: 100%;
+    background-color: rgba(0,0,0,.7);
     text-align: center;
     font-size: 14px;
 }
