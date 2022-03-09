@@ -307,6 +307,53 @@ body {
     text-align: justify;
 }
 
+.experience__line {
+    margin: 15px auto 0;
+    width: 98%;
+    height: 2px;
+    position: relative;
+    background-color: #fff;
+}
+
+.experience__line::before {
+    content: '';
+    position: absolute;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    transform: rotate(-45deg);
+    right: -1px;
+    top: -3px;
+}
+
+.experience__body {
+    display: flex;
+}
+
+.experience__item {
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    position: relative;
+    z-index: 1;
+    border-left: 2px solid #fff
+}
+.experience__item::before {
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 2px;
+    background-color: #fff;
+    top: -22px;
+    left: -2px;
+    z-index: -1;
+}
+.experience__item__date {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #7F242D;
+}
+
 .examplies__body {
     padding: 20px;
     display: flex;
