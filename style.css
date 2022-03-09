@@ -414,6 +414,7 @@ body {
 }
 
 .examplies__item__descr {
+    display: none;
     box-sizing: border-box;
     position: absolute;
     bottom: 0;
