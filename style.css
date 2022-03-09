@@ -302,6 +302,11 @@ body {
     z-index: 1;
 }
 
+.about__body {
+    text-indent: 30px;
+    text-align: justify;
+}
+
 .examplies__body {
     padding: 20px;
     display: flex;
