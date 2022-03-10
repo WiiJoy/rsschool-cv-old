@@ -355,7 +355,7 @@ body {
 }
 
 .examplies__body {
-    padding: 20px;
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -367,7 +367,8 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
+    gap: 10px;
+    padding: 10px;
 }
 
 .examplies__item {
@@ -376,7 +377,7 @@ body {
     transition: all .3s;
 }
 
-.examplies__item:hover {
+.examplies__item_active {
     filter: none;
 }
 
@@ -430,7 +431,12 @@ body {
     background-color: rgba(0,0,0,.7);
     text-align: center;
     font-size: 14px;
-    transition: opacity .5s;
+    transition: opacity .3s;
+}
+
+.examplies__item_active .examplies__item__descr {
+    display: block;
+    opacity: 1;
 }
 
 .examplies__item__descr_instructor {
