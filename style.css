@@ -355,7 +355,7 @@ body {
 }
 
 .examplies__body {
-    padding: 20px 0;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -364,10 +364,11 @@ body {
 }
 
 .examplies__edu {
+    box-sizing: border-box;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 5px;
     padding: 10px;
 }
 
