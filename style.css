@@ -740,6 +740,16 @@ body {
 }
 
 @media (max-width: 425px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .title::before {
+        font-size: 16px;
+        line-height: 16px;
+        width: 200px;
+    }
+
     .education, .courses, .languages, .contacts {
         width: 100%;
     }
@@ -755,12 +765,15 @@ body {
     }
 
     .code {
-        font-size: 0.7rem;
+        font-size: 0.5rem;
+        line-height: 12px;
     }
 
     .code__wrap {
-        margin-left: -274px;
-        overflow-x: auto;
-        overflow-y: hidden;
+        margin-left: -210px;
+    }
+
+    .footer {
+        font-size: 14px;
     }
 }
