@@ -88,6 +88,7 @@ body {
 }
 
 .main__left {
+    border-radius: 10px 10px 0 0;
     background-color: #833535;
     width: 350px;
     height: 100%;
@@ -177,35 +178,41 @@ body {
 .left__title, .right__title {
     box-sizing: border-box;
     padding: 0 20px;
-    background-color: #1B1B1B;
-    height: 45px;
+    /* background-color: #1B1B1B; */
+    /* height: 45px; */
     display: flex;
     align-items: flex-end;
     /* border-radius: 0 0 10px 10px; */
 }
 
-.right__title {
+/* .right__title {
     background-color: #833535;
-}
+} */
 
 .subtitle {
     /* display: inline; */
-    background-color: #833535;
-    color: #1B1B1B;
+    /* background-color: #833535; */
+    color: white;
     padding: 0 20px;
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
-    vertical-align: bottom;
-    border-radius: 10px 10px 0 0
+    /* font-size: 18px; */
+    /* line-height: 30px; */
+
+    font-size: 24px;
+    line-height: 48px;
+    /* vertical-align: bottom; */
+    width: 100%;
+    /* border-radius: 10px 10px 0 0; */
+    border-bottom: 1px solid #1B1B1B;
 }
 
 .subtitle_right {
-    font-size: 24px;
-    line-height: 36px;
-    background-color: #1B1B1B;
-    color: #833535;
+    /* font-size: 24px; */
+    /* line-height: 36px; */
+    /* background-color: #1B1B1B; */
+    color: white;
+    border-bottom: 1px solid #833535;
 }
 
 .courses__item {
