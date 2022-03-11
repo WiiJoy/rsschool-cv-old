@@ -121,22 +121,48 @@ body {
 .title::before {
     content: 'Front-end Developer';
     position: absolute;
-    font-size: 24px;
-    line-height: 24px;
-    bottom: -13px;
+    font-size: 30px;
+    line-height: 30px;
+    bottom: -14px;
     left: 0;
     right: 0;
     text-align: center;
-    width: 300px;
+    width: 350px;
     margin: 0 auto;
     background-color: #1B1B1B;
-    color: #833535 
+    color: #833535; 
+}
+
+.photo__wrap {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
 }
 
 .photo {
-    width: 350px;
-    height: 350px;
+    display: block;
+    box-sizing: border-box;
+    width: 300px;
+    /* height: 350px; */
+    border: 3px solid white;
+    border-radius: 50%;
+    /* z-index: 1; */
+    background-color: #1B1B1B;
 }
+
+/* .photo__wrap::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    height: 305px;
+    width: 305px;
+    border-radius: 50%;
+    z-index: 0;
+    /* background-image: linear-gradient(390deg, transparent 50%, #fff 50%), linear-gradient(328deg, #833535 50%, #fff 50%); */
+    /* background-image: linear-gradient(328deg, #833535 30%, #fff 30%); */
+/* }  */
 
 .left__body, .right__body {
     padding: 20px;
