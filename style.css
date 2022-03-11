@@ -624,6 +624,15 @@ body {
 
     .title {
         width: 90vw;
+        font-size: 36px;
+        line-height: 90px;
+    }
+
+    .title::before {
+        font-size: 18px;
+        line-height: 18px;
+        width: 250px;
+        bottom: -10px;
     }
 
     .main__body {
@@ -657,6 +666,25 @@ body {
 
     .skills {
         order: 3;
+    }
+
+    .skills__item {
+        height: 50px;
+        width: 50px;
+    }
+
+    .skills__item::before {
+        height: 50px;
+        width: 50px;
+    }
+
+    .skills__item::after {
+        height: 40px;
+        width: 40px;
+    }
+
+    .skills__item__img {
+        width: 30px;
     }
 
     .education, .courses {
@@ -709,4 +737,30 @@ body {
         border-radius: 0;
     }
     
+}
+
+@media (max-width: 425px) {
+    .education, .courses, .languages, .contacts {
+        width: 100%;
+    }
+
+    .examplies__edu {
+        grid-template-columns: repeat(1, 1fr);
+        /* grid-auto-rows: 185px; */
+    }
+
+    .examplies__item_memory-game {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+    }
+
+    .code {
+        font-size: 0.7rem;
+    }
+
+    .code__wrap {
+        margin-left: -274px;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
 }
