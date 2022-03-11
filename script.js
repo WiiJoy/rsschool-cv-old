@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     
         item.addEventListener('mouseout', (ev) => {
-            if (!ev.toElement.classList.contains('examplies__edu')) return
+            if (ev.toElement && (ev.toElement.classList.contains('examplies__item__img') || ev.toElement.classList.contains('examplies__item__descr'))) return
 
             item.classList.remove('examplies__item_active')
         })
