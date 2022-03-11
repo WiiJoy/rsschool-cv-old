@@ -341,8 +341,8 @@ body {
 }
 
 .experience__line {
-    margin: 15px auto 0;
-    width: 98%;
+    margin: 25px auto 0;
+    width: 95%;
     height: 2px;
     position: relative;
     background-color: #fff;
@@ -353,24 +353,28 @@ body {
     position: absolute;
     border: solid #fff;
     border-width: 0 2px 2px 0;
-    padding: 3px;
+    padding: 6px;
     transform: rotate(-45deg);
-    right: -1px;
-    top: -3px;
+    right: 0;
+    top: -6px;
 }
 
 .experience__body {
     display: flex;
+    padding: 20px 35px
 }
 
 .experience__item {
     box-sizing: border-box;
-    padding: 10px;
+    padding: 10px 20px 10px 10px;
     border: none;
     position: relative;
     z-index: 1;
-    border-left: 2px solid #fff
+    border-left: 2px solid #fff;
+    font-size: 16px;
+    line-height: 20px;
 }
+
 .experience__item::before {
     content: '';
     position: absolute;
@@ -381,6 +385,19 @@ body {
     left: -2px;
     z-index: -1;
 }
+
+.experience__item::after {
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: -25px;
+    left: -6px;
+    z-index: -1;
+}
+
 .experience__item__date {
     margin-top: 10px;
     font-size: 12px;
