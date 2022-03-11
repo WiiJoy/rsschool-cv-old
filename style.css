@@ -602,5 +602,111 @@ body {
 }
 
 @media (max-width: 768px) {
+    .container {
+        grid-template-rows: 0 auto 50px;
+    }
+
+    .nav {
+        display: none;
+        position: fixed;
+    }
+
+    .main__top {
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0 30px 0;
+    }
+
+    .photo__wrap {
+        width: 300px;
+    }
+
+    .title {
+        width: 90vw;
+    }
+
+    .main__body {
+        flex-direction: column;
+    }
+
+    .main__left {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skills {
+        width: 100%;
+    }
+
+    .education, .courses, .languages, .contacts {
+        width: 50%;
+    }
+
+    .contacts {
+        order: 1;
+    }
+
+    .languages {
+        order: 2;
+    }
+
+    .skills {
+        order: 3;
+    }
+
+    .education, .courses {
+        order: 4;
+    }
+
+    .experience__line {
+        display: none;
+    }
+
+    .experience__body {
+        margin-top: 20px;
+        flex-direction: column-reverse;
+    }
+
+    .experience__item {
+        box-sizing: border-box;
+        padding: 20px 10px 10px 30px;
+    }
+
+    .experience__item::after {
+        top: 24px;
+    }
+
+    .experience__item:last-child::before {
+        content: '';
+        position: absolute;
+        border: solid #fff;
+        border-width: 0 2px 2px 0;
+        padding: 6px;
+        transform: rotate(-135deg);
+        left: -8px;
+        top: 0;
+        height: 0;
+        width: 0;
+        background: none;
+    }
+
+    .examplies__item_2048 {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+
+    .examplies__item_memory-game {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+
+    .footer {
+        border-radius: 0;
+    }
     
 }
