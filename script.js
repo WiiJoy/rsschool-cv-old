@@ -2,7 +2,10 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     const examplies = document.querySelectorAll('.examplies__item'),
-          burger = document.querySelector('.hamburger');
+          burger = document.querySelector('.hamburger'),
+          container = document.querySelector('.container'),
+          nav = document.querySelector('.nav'),
+          wrapper = document.querySelector('.wrapper');
     // let currItem = ''
 
     examplies.forEach(item => {
@@ -21,5 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     burger.addEventListener('click', () => {
         burger.classList.toggle('hamburger_active')
+        container.classList.toggle('container_inactive')
+        nav.classList.toggle('nav_active')
+        wrapper.classList.toggle('wrapper_active')
     })
 })
