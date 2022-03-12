@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* line-height: auto; */
 }
 
 *::-webkit-scrollbar {
@@ -26,7 +25,6 @@ body {
     height: 100%;
     background-color: #1B1B1B;
     font-size: 18px;
-    /* line-height: 24px; */
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -129,7 +127,6 @@ body {
 .main__left {
     border-radius: 10px 10px 0 0;
     background-color: #833535;
-    /* width: 350px; */
     flex: 1;
     height: 100%;
 }
@@ -155,7 +152,6 @@ body {
     position: relative;
     font-size: 56px;
     padding: 30px 0;
-    /* line-height: 140px; */
     width: 100%;
     max-width: 700px;
     color: white;
@@ -177,7 +173,6 @@ body {
 }
 
 .photo__wrap {
-    /* width: 350px; */
     flex: 1;
     display: flex;
     justify-content: center;
@@ -187,7 +182,6 @@ body {
 .photo {
     display: block;
     box-sizing: border-box;
-    /* width: 300px; */
     width: 100%;
     border: 3px solid white;
     border-radius: 50%;
@@ -517,8 +511,6 @@ body {
 }
 .code__wrap {
     width: 100%;
-    /* margin-left: -100%; */
-    /* margin-left: -170px; */
     font-family: 'Inconsolata', monospace;
 }
 
@@ -598,7 +590,6 @@ body {
 
     .title {
         font-size: 48px;
-        /* line-height: 120px; */
         width: 75%;
         max-width: 550px;
     }
@@ -608,10 +599,6 @@ body {
         line-height: 24px;
         width: 300px;
     }
-
-    /* .code__wrap {
-        margin-left: -300px;
-    } */
 }
 
 @media (max-width: 768px) {
@@ -703,7 +690,6 @@ body {
     .title {
         width: 90vw;
         font-size: 36px;
-        /* line-height: 90px; */
     }
 
     .title::before {
@@ -741,10 +727,6 @@ body {
     .contacts {
         order: 1;
     }
-
-    /* .contacts__item, .languages__item {
-        font-size: 12px;
-    } */
 
     .languages {
         order: 2;
@@ -824,10 +806,6 @@ body {
         line-height: 14px;
     }
 
-    /* .code__wrap {
-        margin-left: -270px;
-    } */
-
     .footer {
         border-radius: 0;
     }
@@ -866,10 +844,6 @@ body {
         font-size: 0.5rem;
         line-height: 12px;
     }
-
-    /* .code__wrap {
-        margin-left: -210px;
-    } */
 
     .footer {
         font-size: 14px;

@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
           container = document.querySelector('.container'),
           nav = document.querySelector('.nav'),
           wrapper = document.querySelector('.wrapper');
-    // let currItem = ''
 
     examplies.forEach(item => {
         item.addEventListener('mouseover', (ev) => {
