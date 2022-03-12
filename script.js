@@ -3,6 +3,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const examplies = document.querySelectorAll('.examplies__item'),
           burger = document.querySelector('.hamburger'),
+          menuItem = document.querySelectorAll('.menu__item'),
           container = document.querySelector('.container'),
           nav = document.querySelector('.nav'),
           wrapper = document.querySelector('.wrapper');
@@ -22,10 +23,19 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     })
 
-    burger.addEventListener('click', () => {
+    burger.addEventListener('click', (ev) => {
         burger.classList.toggle('hamburger_active')
-        container.classList.toggle('container_inactive')
+        document.body.classList.toggle('container_inactive')
         nav.classList.toggle('nav_active')
         wrapper.classList.toggle('wrapper_active')
     })
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            burger.classList.remove('hamburger_active')
+            container.classList.remove('container_inactive')
+            nav.classList.remove('nav_active')
+            wrapper.classList.remove('wrapper_active')
+        })
+    });
 })
