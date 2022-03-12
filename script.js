@@ -1,7 +1,8 @@
 'use strict'
 
 document.addEventListener('DOMContentLoaded', () => {
-    const examplies = document.querySelectorAll('.examplies__item')
+    const examplies = document.querySelectorAll('.examplies__item'),
+          burger = document.querySelector('.hamburger');
     // let currItem = ''
 
     examplies.forEach(item => {
@@ -16,5 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             item.classList.remove('examplies__item_active')
         })
+    })
+
+    burger.addEventListener('click', () => {
+        burger.classList.toggle('hamburger_active')
     })
 })

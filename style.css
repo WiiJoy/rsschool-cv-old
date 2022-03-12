@@ -649,13 +649,14 @@ body {
         background-color: white;
         margin-bottom: 11px;
         transition: .5s;
+        opacity: 1;
     }
 
-    .hamburger_active {
+    /* .hamburger_active {
         position: fixed;
-        top: 30px;
-        right: 60px;
-    }
+        top: 20px;
+        right: 10px;
+    } */
 
     .hamburger_active span {
         margin-bottom: -2px;
@@ -667,7 +668,7 @@ body {
     }
 
     .hamburger_active span:nth-child(2) {
-        display: none;
+        opacity: 0;
     }
 
     .hamburger_active span:nth-child(3) {
