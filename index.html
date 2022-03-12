@@ -116,7 +116,7 @@
                         <div class="left__body languages__body">
                             <ul class="languages__list">
                                 <li class="languages__item"><img class="languages__item__img" src="./assets/icons/langs/rus.png" alt="russian"> Native</li>
-                                <li class="languages__item"><img class="languages__item__img" src="./assets/icons/langs/eng.png" alt="english"> Elementary/Pre-Intermediate</li>
+                                <li class="languages__item"><img class="languages__item__img" src="./assets/icons/langs/eng.png" alt="english"> Elementary / Pre-Intermediate</li>
                             </ul>
                         </div>
                     </section>
@@ -302,21 +302,21 @@
                                 <p class="examplies__code__descr"><span class="descr_bold">Description:</span> Given some text with html tags, return this text with replacement unmark list's items for items with 'li':</p>
                                 <pre class="code">
                                     <code class="code__wrap">
-                                        <span class="code_func">function</span> <span class="code_funk-name">modifyLi</span>(<span class="code_var">text</span>) {
-                                            <span class="code_func">const</span> regP = <span class="code_regexp">/\/(p|li)&gt;&lt;p&gt;(-|·)\s\D.+[,.;:]&lt;\/p&gt;/</span><span class="code_func">s</span>
-                                        
-                                            <span class="code_func">while</span> (regP.<span class="code_funk-name">test</span>(text)) {
-                                                <span class="code_func">let</span> foundP =  text.<span class="code_funk-name">match</span>(regP)
-                                        
-                                                <span class="code_func">let</span> handledP = foundP[<span class="code_var">0</span>]
-                                                    .<span class="code_funk-name">replaceAll</span>(<span class="code_text">'&lt;/p&gt;', '&lt;/li&gt;'</span>)
-                                                    .<span class="code_funk-name">replaceAll</span>(<span class="code_text">'&lt;p&gt;- ', '&lt;li&gt;'</span>)
-                                                    .<span class="code_funk-name">replaceAll</span>(<span class="code_text">'&lt;p&gt;· ', '&lt;li&gt;'</span>)
-                                                text = text.<span class="code_funk-name">replaceAll</span>(foundP[<span class="code_var">0</span>], handledP)
-                                            }
-                                            
-                                            <span class="code_func">return</span> text
-                                        }
+<span class="code_func">function</span> <span class="code_funk-name">modifyLi</span>(<span class="code_var">text</span>) {
+    <span class="code_func">const</span> regP = <span class="code_regexp">/\/(p|li)&gt;&lt;p&gt;(-|·)\s\D.+[,.;:]&lt;\/p&gt;/</span><span class="code_func">s</span>
+
+    <span class="code_func">while</span> (regP.<span class="code_funk-name">test</span>(text)) {
+        <span class="code_func">let</span> foundP =  text.<span class="code_funk-name">match</span>(regP)
+
+        <span class="code_func">let</span> handledP = foundP[<span class="code_var">0</span>]
+            .<span class="code_funk-name">replaceAll</span>(<span class="code_text">'&lt;/p&gt;', '&lt;/li&gt;'</span>)
+            .<span class="code_funk-name">replaceAll</span>(<span class="code_text">'&lt;p&gt;- ', '&lt;li&gt;'</span>)
+            .<span class="code_funk-name">replaceAll</span>(<span class="code_text">'&lt;p&gt;· ', '&lt;li&gt;'</span>)
+        text = text.<span class="code_funk-name">replaceAll</span>(foundP[<span class="code_var">0</span>], handledP)
+    }
+    
+    <span class="code_func">return</span> text
+}
                                     </code>
                                 </pre>
                             </div>
