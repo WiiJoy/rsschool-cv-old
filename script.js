@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     menuItem.forEach(item => {
         item.addEventListener('click', () => {
             burger.classList.remove('hamburger_active')
-            container.classList.remove('container_inactive')
+            document.body.classList.remove('container_inactive')
             nav.classList.remove('nav_active')
             wrapper.classList.remove('wrapper_active')
         })
