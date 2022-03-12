@@ -45,6 +45,7 @@ body {
 
 .header {
     border-radius: 10px;
+    position: relative;
 }
 
 .footer {
@@ -79,6 +80,10 @@ body {
 
 .menu__link:hover {
     color: #1B1B1B;
+}
+
+.hamburger {
+    display: none;
 }
 
 .main {
@@ -624,6 +629,50 @@ body {
     .nav {
         display: none;
         position: fixed;
+    }
+
+    .hamburger {
+        position: fixed;
+        right: 10px;
+        top: 20px;
+        margin-right: 4px;
+        z-index: 3;
+        display: block;
+        height: 28px;
+        width: 50px;
+    }
+
+    .hamburger span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: white;
+        margin-bottom: 11px;
+        transition: .5s;
+    }
+
+    .hamburger_active {
+        position: fixed;
+        top: 30px;
+        right: 60px;
+    }
+
+    .hamburger_active span {
+        margin-bottom: -2px;
+    }
+
+    .hamburger_active span:nth-child(1) {
+        transform: translateY(13px) translateX(-4px) rotate(-45deg);
+        width: 60px;
+    }
+
+    .hamburger_active span:nth-child(2) {
+        display: none;
+    }
+
+    .hamburger_active span:nth-child(3) {
+        transform: translateY(13px) translateX(-4px) rotate(45deg);
+        width: 60px;
     }
 
     .main__top {
