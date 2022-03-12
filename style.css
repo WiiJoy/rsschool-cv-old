@@ -597,11 +597,15 @@ body {
     }
 
     .code__wrap {
-        margin-left: -230px;
+        margin-left: -300px;
     }
 }
 
 @media (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+
     .container {
         grid-template-rows: 0 auto 50px;
     }
@@ -658,6 +662,10 @@ body {
 
     .contacts {
         order: 1;
+    }
+
+    .contacts__item, .languages__item {
+        font-size: 12px;
     }
 
     .languages {
@@ -731,6 +739,15 @@ body {
     .examplies__item_memory-game {
         grid-row: 1 / 2;
         grid-column: 2 / 3;
+    }
+
+    .code {
+        font-size: 0.7rem;
+        line-height: 14px;
+    }
+
+    .code__wrap {
+        margin-left: -270px;
     }
 
     .footer {
